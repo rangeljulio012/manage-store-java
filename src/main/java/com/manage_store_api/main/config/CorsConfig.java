@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:3000") // En producción, especifica dominios
+                        .allowedOrigins("http://localhost:3000/") // En producción, especifica dominios
                         .allowedMethods("*")
                         .allowedHeaders("*")
                         .exposedHeaders("Authorization") // Headers personalizados
